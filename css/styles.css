@@ -1,22 +1,66 @@
 /* Tailwind CSS Directives */
 h1 {
     color: royalblue;
+    border-style: solid black;
   }
 
 body {
-    display: flex;
-    flex-flow: row wrap;
-    background-color: #659DBD;
-    font-family: roboto;
+    background-color: whitesmoke
 }
 
 * {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 5px;
-    display: flex;
-    flex-flow: row wrap;
-    flex-wrap: wrap;
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#client_list {
+    padding-inline-start: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: royalblue;
+}
+
+#date {
+    text-align: right;
+}
+
+#content{
+    padding-inline-start: 0px;
+}
+
+.section {
+    border-radius: 25px;
+    margin-top: 40px;
+    padding: 10px;
+    padding-bottom: 2em;
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px lightgrey;
+}
+
+.bottom_section {
+    margin-top: 50px;
+    padding-inline-start: 0px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.black {
+    color: black;
+}
