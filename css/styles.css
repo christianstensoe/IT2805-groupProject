@@ -1,0 +1,25 @@
+/* Tailwind CSS Directives */
+h1 {
+    color: royalblue;
+  }
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #659DBD;
+    font-family: roboto;
+}
+
+* {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+`
