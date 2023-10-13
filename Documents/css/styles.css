@@ -75,3 +75,10 @@ ul ul {
     padding: 0;
     margin: 0;
 }
+
+table, th, tr {
+    width: 100%;
+    margin: 0;
+    border: 1px solid black;
+
+}
