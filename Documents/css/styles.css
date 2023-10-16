@@ -1,11 +1,13 @@
-/* Tailwind CSS Directives */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 h1 {
     color: royalblue;
     border-style: solid black;
   }
 
 body {
-    background-color: whitesmoke
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
 }
 
 * {
