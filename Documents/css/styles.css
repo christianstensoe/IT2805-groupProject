@@ -84,9 +84,9 @@ ul ul {
     width: 50%;
   }
 
-  img {
-    margin-top: 20px;
-    margin-bottom: 20px;
+img {
+    margin-top: 40px;
+    
   }
 
 table {
@@ -102,3 +102,6 @@ th, td {
     border: 1px solid black;
 }
 
+figure {
+    text-align: center;
+}
