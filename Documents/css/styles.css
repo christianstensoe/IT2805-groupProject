@@ -75,3 +75,30 @@ ul ul {
     padding: 0;
     margin: 0;
 }
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+table {
+    width: 100%;
+    margin: 0;
+    padding: 2px;
+    border: 1px solid black;
+}
+
+th, td {
+    margin: 0;
+    padding: 2px;
+    border: 1px solid black;
+}
+
