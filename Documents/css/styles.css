@@ -75,3 +75,16 @@ ul ul {
     padding: 0;
     margin: 0;
 }
+
+table {
+    width: 100%;
+    margin: 0;
+    padding: 2px;
+    border: 1px solid black;
+}
+
+th, td {
+    margin: 0;
+    padding: 2px;
+    border: 1px solid black;
+}
