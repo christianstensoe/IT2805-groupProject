@@ -47,3 +47,15 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+.movie-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.movie-image-modal {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
