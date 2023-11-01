@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -24,6 +25,87 @@
         </div> 
     </header>
 
+    <section class="under_header center">
+
+        <h2 id="booking_header"> Bestill kinobilletter her! </h2>
+
+        <div id="bookingDiv">
+            <form id="bookingForm" onsubmit="bookingConfirmation(event)">
+
+                <h2> Kontaktopplysninger </h2>
+
+                <div class="grid">
+                    
+                    <label for="fname"> Fornavn: </label>
+                    <input type="text" name="fname" id="fname" required >
+
+                    <label for="lname"> Etternavn: </label>
+                    <input type="text" name="lname" id="lname" required>
+
+                    <label for="email"> E-post: </label>
+                    <input type="text" name="email" id="email" required> 
+
+                    <label for="address"> Adresse: </label>
+                    <input type="text" name="address" id="address">
+                </div>
+
+                <h2> Velg film og antall billetter </h2>
+
+                <p> Billetter må bestilles senest en time før filmen starter </p>
+                
+
+                <label for="movie"> Film: </label>
+                <input type="text" name="movie" id="movie"  required> <br>
+    
+                <br>
+    
+                <label for="date"> Dato: </label>
+                <input type="date" name="date" id="date" required> <br>
+    
+                <br>
+    
+                <label for="time"> Tidspunkt: </label> <br> <br>
+                
+                <select name="time" id="time">
+                    <option value="17:00"> 17:00 </option>
+                    <option value="19:00"> 19:00 </option>
+                    <option value="21:00"> 21:00 </option>
+                </select><br>
+    
+                <h3> Billettyper </h3>
+
+                <div class="grid">
+
+                    <label for="number_adult_ticket"> Voksenbillett ( 200,- ) </label> 
+                    <input type="number" name="number_adult_ticket" id="number_adult_ticket" value="0" min="0" max="10" onchange="updateBooking()"> 
+                    <label for="number_student_ticket"> Studentbillett ( 100,- ) </label>
+                    <input type="number" name="number_student_ticket" id="number_student_ticket" value="0" min="0" max="10" onchange="updateBooking()">  
+                    <label for="number_old_ticket"> Honnørbillett ( 150,- ) </label> 
+                    <input type="number" name="number_old_ticket" id="number_old_ticket" value="0" min="0" max="10" onchange="updateBooking()">  
+                    <label for="number_child_ticket"> Barnebillett ( gratis* ) </label> 
+                    <input type="number" name="number_child_ticket" id="number_child_ticket"value="0" min="0" max="10" onchange="updateBooking()">  
+
+                </div>
+
+                <p id="child_ticket_info"> *Barnebilletter er gratis ved følge med andre </p>
+
+                <br>
+                
+                <input type="submit" value="Bekreft bestilling">
+
+                <br> <br>
+
+                <h2> Oppsummering </h2>
+
+                <p id="totalPrice"> Totalpris: </p>
+                <p id="numberOfTickets"> Antall billetter: </p>
+
+                <p id="booking_confirmation"></p>
+
+            </form>
+        </div>
+        
+    </section>
     
     <footer>
         <div class="bottom center">
@@ -32,6 +114,8 @@
             <div> Adresse: Filmveien 123, 7030 Trondheim</div>
         </div>
     </footer>
+
+    <script src="../js/booking_script.js"></script>
     
 </body>
 </html>
