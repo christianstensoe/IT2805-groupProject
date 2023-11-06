@@ -89,14 +89,62 @@
     }
 
 }
+
+
 .under_header{
     margin-top: 100px;
 }
-img {
-    margin: 15px;
+#about_us {
+    display:block;
+    margin: auto;
+    text-align: center;
+}
+#about_us h1{
+    text-align: center;
+    font-size: 60px;
+}
+#team{
+    text-align: center;
+    font-size: 60px;
+    color: red;
 }
 
-
+#about_us h2 {
+    text-align: center;
+    font-size: 120%;
+}
+#about_us{
+    text-align: center;
+    margin-top:100px;
+}
+#logo.png{
+    margin-top: 0px;
+}
+#about_us p{
+    text-align: center;
+    margin: 70px;
+    font-size: 20px;
+    
+}
+#members {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#members p{
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+    display:none;
+    
+}
+#members img{
+    max-width: 250px;
+    max-height: 370px;
+    padding: 20px;
+    align-items: center;
+}
 
 
 
