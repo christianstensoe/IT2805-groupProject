@@ -1,3 +1,10 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+
+
 .topbox {
     display: flex;
     flex-wrap: nowrap;
@@ -17,7 +24,7 @@
     margin: 2px;
 }
 
-#homepage {
+#index {
     margin-left: 0;
 }
 
@@ -72,7 +79,79 @@
     background-color: rgb(224, 0, 0);
 }
 
-@media screen and (max-width: 750px) {
+.under_header {
+    margin-top: 100px;
+}
+
+#booking_header {
+    text-align: center;
+}
+
+#child_ticket_info {
+    font-size: small;
+}
+
+/* For form nedenfor */
+
+input {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 4px 0;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+}
+
+#bookingDiv {
+    margin: auto;
+    width: 68%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#bookingForm {
+    width: 100%;
+    padding: 30px;
+}
+
+input[type="submit"] {
+    background-color: rgb(27, 180, 78);
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(23, 160, 76);
+}
+
+form p {
+    font-size: large;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+}
+
+.grid label {
+    padding: 10px 5px;
+    padding-left: 10px;
+}
+
+.grid input {
+    max-width: 90%;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    
+}
+
+/* For form ovenfor */
+
+
+
+@media screen and (max-width: 850px) {
     .topbox {
         display: block;
     }
@@ -88,8 +167,29 @@
         height: auto;
     }
 
-}
+    .under_header {
+        margin-top: 200px;
+    }
+    
+    #bookingDiv {
+        width: 80%;
+    }
 
+    .grid {
+        display: block;
+    }
+  
+    .grid label {
+        padding: 0;
+    }
+
+    .grid input {
+        max-width: 100%;
+        margin: 10px 0 10px 0;
+    }
+  
+}
+  
 
 .under_header{
     margin-top: 100px;
