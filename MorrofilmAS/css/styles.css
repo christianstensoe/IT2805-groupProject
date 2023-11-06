@@ -123,13 +123,18 @@
     align-items: center;
 }
 
+#popupTitle {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
 .popup-content{
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    display: flex;
-    align-items: center;
+
 }
 
 .close {
@@ -138,6 +143,17 @@
     right: 20px;
     font-size: 24px;
     cursor: pointer;
+}
+
+.popup-image {
+    margin-right: 20px; 
+    max-width: 200px; 
+}
+
+#popupText {
+    flex: 1; 
+    text-align: left;
+
 }
 
 @media (max-width: 768px){

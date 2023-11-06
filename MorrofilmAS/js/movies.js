@@ -46,7 +46,7 @@ closePopup.addEventListener('click', closePopupThing);
 
 window.addEventListener('click', function(event){
     if (event.target == popup){
-        closePopupThing;
+        closePopupThing();
     }
 });
 
