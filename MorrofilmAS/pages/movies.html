@@ -8,22 +8,36 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 <body>
-
-             
-    <header id="header"></header>
   
+  <header id="header"></header>
+
+<!-- for at ikke noe skal havne under fanene -->
     <section class="under_header"> 
         <img src="../Images/AW.png" alt="After_Work_plakat">
         <img src="../Images/DM.png" alt="Dumb_money_plakat">
-
-
     </section>
 
-    
 
-    <footer id="footer"></footer>
+    <div class="movie-container" id="movie-container">
+        <!-- Movies will be displayed here -->
+    </div>
+
+<!-- html-kode for popup-boksen --> 
+
+<div class="popup" id="moviePopup">
+    <div class="popup-content">
+        <h2 id="popupTitle"></h2>
+        <p id="popupText"></p>
+    </div>
+    <span class="close">&times;</span>
+</div>
     
+    <footer id="footer"></footer>
+
+    <script src="../js/movies.js"></script>
+  
     <script src="../js/html_generator.js"></script>
+
     
 </body>
 </html>
