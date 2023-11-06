@@ -13,31 +13,63 @@
 
 <!-- for at ikke noe skal havne under fanene -->
     <section class="under_header"> 
-        <img src="../Images/AW.png" alt="After_Work_plakat">
-        <img src="../Images/DM.png" alt="Dumb_money_plakat">
     </section>
 
-
-    <div class="movie-container" id="movie-container">
-        <!-- Movies will be displayed here -->
+    <div class="container">
+        <div class="movie" onclick="showMovieInfo('After Work', 'After Work er en tankevekkende film om fenomenet arbeid i det 21. århundre, filmet med skarp linse og en mild dose sarkasme. Regissør Erik Gandini er kjent for sine satiriske filmer som Videocracy og Swedish Theory of Love. Denne gangen tar han for seg vårt forhold til jobben. For hvem er vi egentlig, når jobben slutter å eksistere?', '../Images/AW.png')">
+            <img src="../Images/AW.png" alt="Movie 1 Cover">
+            <h2>After Work</h2>
+        </div>
+        <div class="movie" onclick="showMovieInfo('Dumb Money', 'Movie 2 Description')">
+            <img src="../Images/DM.png" alt="Movie 2 Cover">
+            <h2>Dumb Money</h2>
+        </div>
+        <div class="movie" onclick="showMovieInfo('Lars Er LOL', 'Movie 3 Description')">
+            <img src="../Images/LEL.png" alt="Movie 3 Cover">
+            <h2>Lars Er LOL</h2>
+        </div>
+        <div class="movie" onclick="showMovieInfo('Paw Patrol', 'Movie 3 Description')">
+            <img src="../Images/PP.png" alt="Movie 4 Cover">
+            <h2>Paw Patrol</h2>
+        </div>
+        <div class="movie" onclick="showMovieInfo('Five Nights At Freddys', 'Movie 3 Description')">
+            <img src="../Images/FNAF.png" alt="Movie 5 Cover">
+            <h2>Five Nights At Freddys</h2>
+        </div>
+        <div class="movie" onclick="showMovieInfo('Killers Of The Flower Moon', 'Movie 3 Description')">
+            <img src="../Images/KOFM.png" alt="Movie 6 Cover">
+            <h2>Killers Of The Flower Moon</h2>
+        </div>
+        <div class="movie" onclick="showMovieInfo('Exorcist', 'Movie 3 Description')">
+            <img src="../Images/Exorsist.png" alt="Movie 7 Cover">
+            <h2>Exorcist</h2>
+        </div>
+        <div class="movie" onclick="showMovieInfo('Sulis 1907', 'Movie 3 Description')">
+            <img src="../Images/Sulis 1907.png" alt="Movie 8 Cover">
+            <h2>Sulis 1907</h2>
+        </div>
+        <!-- Add more movie entries as needed -->
     </div>
 
-<!-- html-kode for popup-boksen --> 
-
-<div class="popup" id="moviePopup">
-    <div class="popup-content">
-        <h2 id="popupTitle"></h2>
-        <p id="popupText"></p>
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideMovieInfo()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p id="modalImage"></p>
+            <a href="../pages/booking.html">
+                <button>Book denne filmen!</button>
+            </a>
+        </div>
     </div>
-    <span class="close">&times;</span>
-</div>
-    
+
+    <header id="header"></header>
+
     <footer id="footer"></footer>
-
-    <script src="../js/movies.js"></script>
-  
+    
     <script src="../js/html_generator.js"></script>
 
+    <script src="../js/movies.js"></script>
     
 </body>
 </html>

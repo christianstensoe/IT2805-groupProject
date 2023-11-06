@@ -254,67 +254,65 @@ select {
 
 /* kode spesielt til movies og popup-boks */
 
-.movie-container{
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 80px;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .movie {
-    width: 45%;
-    margin: 10px;
-    border: 1px solid #ccc;
+    margin: 20px;
+    text-align: center;
     cursor: pointer;
+    width: 250px; /* Set a specific width for each movie */
 }
 
-.popup {
+.movie img {
+    width: 150px;
+    height: 200px;
+}
+
+.modal {
+    /* Modal styles remain the same */
+}
+
+
+.modal {
     display: none;
     position: fixed;
-    top: 0;
+    z-index: 1;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
+    overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
 }
 
-#popupTitle {
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-
-.popup-content{
-    background-color: #fff;
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
     padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-
+    border: 1px solid #888;
+    width: 80%;
 }
 
 .close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
     cursor: pointer;
 }
 
-.popup-image {
-    margin-right: 20px; 
-    max-width: 200px; 
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
-
-#popupText {
-    flex: 1; 
-    text-align: left;
-
-}
-
-@media (max-width: 768px){
-    .movie{
-        width: 100%;
-    }
-}
-
