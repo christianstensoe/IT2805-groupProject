@@ -24,12 +24,24 @@
         </div> 
     </header>
 
+<!-- for at ikke noe skal havne under fanene -->
     <section class="under-header"></section>
-    <div class="movies-container" id="movies-container">
+
+
+    <div class="movie-container" id="movie-container">
         <h1>Sjekk ut alle filmene våre!</h1>
         <!-- Movies will be displayed here -->
     </div>
 
+<!-- html-kode for popup-boksen --> 
+
+<div class ="popup" id="moviePopup">
+    <div class ="popup-content">
+        <span class="close">&times; </span>
+        <h2 id="popupTitle"></h2>
+        <p id="popupText"></p>
+    </div>
+</div>
     
     <footer>
         <div class="bottom center">
@@ -38,6 +50,8 @@
             <div> Adresse: Filmveien 123, 7030 Trondheim</div>
         </div>
     </footer>
+
+    <script src="../js/movies.js"></script>
     
 </body>
 </html>
