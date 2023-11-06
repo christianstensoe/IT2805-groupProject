@@ -101,6 +101,7 @@
 .movie-container{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 80px;
 }
 
 .movie {
@@ -127,6 +128,8 @@
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .close {
