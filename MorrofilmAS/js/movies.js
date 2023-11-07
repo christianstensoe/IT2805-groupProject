@@ -1,6 +1,7 @@
 function showMovieInfo(title, description, image) {
     document.getElementById("modalTitle").textContent = title;
     document.getElementById("modalDescription").textContent = description;
+    document.getElementById("modalImage").innerHTML = '<img src="' + image + '" alt="Movie Image">';
     document.getElementById("movieModal").style.display = "block";
 
 }
