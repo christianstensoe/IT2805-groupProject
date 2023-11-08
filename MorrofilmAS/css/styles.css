@@ -232,18 +232,50 @@ select {
     flex-wrap: wrap;
     justify-content: center;
 }
-#members p{
+.personObject p{
     display:flex;
     flex-wrap: wrap;
     max-width: 250px;
     display:none;
-    
+    font-size: 12px;
 }
+
+.personObject button{
+    display: none;
+}
+
+
 #members img{
     max-width: 250px;
     max-height: 370px;
-    padding: 20px;
-    align-items: center;
+    padding:20px;
+    margin-bottom: 20px;
+    
+}
+
+.active button{
+    position:relative;
+    right: -450px;
+    top:    20px;
+    display: block;
+
+}
+
+.active p{
+    display: flex;
+    max-width: 500px;
+    border: 2px solid;
+    justify-content: center;
+}
+.active img{
+    max-width: 250px;
+    max-height: 370px;
+    justify-content: center;
+   
+}
+
+.hidden{
+    display: none;
 }
 
 
