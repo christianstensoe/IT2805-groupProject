@@ -12,6 +12,3 @@ function selectPerson(ID){
         }
     }
 }
-function goBack(){
-    window.history.back();
-}

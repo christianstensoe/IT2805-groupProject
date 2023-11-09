@@ -258,7 +258,7 @@ select {
     right: -450px;
     top:    20px;
     display: block;
-
+    text-decoration: none;
 }
 
 .active p{
