@@ -2,7 +2,6 @@
 function selectPerson(ID){
     console.log(ID)
     let go = document.querySelectorAll(".personObject")
-    console.log(go)
     for (let i = 0; i < go.length; i++){
         console.log(go[i])
         if (go[i].id != ID){
@@ -12,3 +11,7 @@ function selectPerson(ID){
         }
     }
 }
+function getOut(){
+
+}
+

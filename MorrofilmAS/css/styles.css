@@ -187,6 +187,16 @@ select {
         max-width: 100%;
         margin: 10px 0 10px 0;
     }
+   #about_us h1{
+    margin:20px;
+   }
+    #intro{
+        margin-top: 20px;
+    }
+    #intro p{
+        font-size: 14px;
+        margin-top: 20px;
+    }
   
 }
   
@@ -220,12 +230,12 @@ select {
 #logo.png{
     margin-top: 0px;
 }
-#about_us p{
+/* #about_us p{
     text-align: center;
     margin: 70px;
-    font-size: 20px;
+    font-size: 20px; */
     
-}
+/* } */
 #members {
     margin: 20px;
     display: flex;
@@ -253,6 +263,43 @@ select {
     
 }
 
+#members h2{
+    font-style: bold;
+}
+#intro p{
+    display: flex;
+    max-width: 978px;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 25px;
+}
+
+.active {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    
+}
+
+.active p {
+    display: block; 
+    max-width: 480px;
+    border: 2px solid;
+    margin-bottom: 50px;
+    font-size: 20px;
+    margin-right: 20px; 
+}
+
+.active h2{
+    display: none;
+}
+
+.active img {
+    max-width: 250px;
+    max-height: 370px;
+    
+}
+
 .active button{
     position:relative;
     right: -450px;
@@ -261,18 +308,6 @@ select {
     text-decoration: none;
 }
 
-.active p{
-    display: flex;
-    max-width: 500px;
-    border: 2px solid;
-    justify-content: center;
-}
-.active img{
-    max-width: 250px;
-    max-height: 370px;
-    justify-content: center;
-   
-}
 
 .hidden{
     display: none;
