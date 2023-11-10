@@ -21,7 +21,13 @@
         <p> The name of our client is Morrofilm AS, a startup based in Trondheim, which focuses on challenging established companies in the sector through innovation,
             lower prices, and hosting interactive events.</p>
         <p> <strong>Website name:</strong> morrofilm.no</p>
-        <p> <strong>Contact person:</strong>Markus Jørgensen </p>
+        <p> <strong>Contact person: </strong> Markus Jørgensen </p>
+
+        <br>
+
+        <p> The website can be found here: 
+            <a href="https://folk.ntnu.no/chstens/IT2805-groupProject/MorrofilmAS/pages/"> https://folk.ntnu.no/chstens/IT2805-groupProject/MorrofilmAS/pages </a>
+        </p>
 
     </section>
 
@@ -29,11 +35,93 @@
 
         <h2> Changes </h2>
 
+        <p>
+            There have definitely been some changes since P2, but the main idea of the website as well as the most basic functionality still remains the same.
+            First of all the navigation structure is the same, which means that we still have the four main pages of the website, with the basic functionality remaining the same.
+        </p>
+
+        <p>
+            The main change of the booking site is that there have been added a lot more validation of the users input, than we presented to do in P2. Initially we just planned to have some basic validation as well as a JavaScript-function that confirms the booking to the user.
+        </p>
+
+        <p> The changes include: </p>
+
+        <ul>
+            <li> 
+                <strong> "ticketValid()" </strong> is a JavaScript function that we made in order to validate the users input. This means extra validation in addition to the use of the keyword "required" in the html-file.
+                This function checks two things. The first thing is that the movie has to be booked minimum one hour before it is scheduled, so the function takes in the time of the movie the person tries to book (either 5pm, 7pm or 9pm), and checks if there is less than one hour until the movie is scheduled.
+                This function also checks whether the sum of the number of booked tickets equals zero, which we could not accept. Because child tickets are free, there is an extra check for that as well.
+            </li>
+            <li>
+                <strong> "bookingConfirmation() </strong> works in about the same way as we described it in P2, but it does not make a pop-up window, as we initially described in the mockups in P2. We consider this as a minor change.
+            </li>
+            <li>
+                <strong> "updateMovie()" </strong> is a JavaScript function that we added for the form to show the image of the movie you're about to book tickets for. We didn't explicitly define this function in P2, but the functionality is shown in the mockups.
+            </li>
+            <li>
+                <strong> html_generator </strong> is an additional JavaScript file that we added to generate the header and the footer of all pages. This was not a script that we mentioned in P2, but we added this so that we don't have as much duplicate code.
+                This script adds the common html for both the header and the footer when a new page is loaded. In addition to that it also changes the color of the header at the page you are currently at.
+            </li>
+        </ul>
+
     </section>
 
     <section>
 
         <h2> Updated Organizational Scheme </h2>
+
+        <ul>
+            <li> pages 
+                <ul> 
+                    <li> index.html </li>
+                    <li> movies.html </li>
+                    <li> booking.html </li>
+                    <li> about.html </li>
+                </ul>
+            </li>
+
+            <li> css 
+                <ul> 
+                     <li> styles.css </li>
+                </ul>
+            </li>
+
+            <li> img 
+                <ul>
+                    <li> about
+                        <ul>
+                            <li> Celina.png</li>
+                            <li> Christian.png</li>
+                            <li> Henrik.png</li>
+                            <li> Herman.png </li>
+                            <li> Logo.png </li>
+                            <li> Vahideh.png </li>
+                        </ul>
+                    </li>
+
+                    <li> movies
+                        <ul>
+                            <li> AW.png </li>
+                            <li> DM.png </li>
+                            <li> Exorcist.png </li>
+                            <li> FNAF.png</li>
+                            <li> KOFM.png </li>
+                            <li> LEL.png</li>
+                            <li> PP.png</li>
+                            <li> Sulis_1907.png </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li> js 
+                <ul> 
+                    <li> about.js </li>
+                    <li> booking.js </li>
+                    <li> html_generator.js </li>
+                    <li> movies.js </li>
+                </ul>
+            </li>
 
     </section>
 
@@ -41,11 +129,46 @@
 
         <h2> Who has been responsible for what? </h2>
 
+        <h3> General responsibility </h3>
+
+        <ul>
+            <li> <strong> Vahideh and Henrik </strong> has been responsible for the booking-page, which also includes the javascript files handling validation and updating of prices etc. to this page.</li>
+            <li> <strong> Christian </strong> has been responsible for the homepage with the slideshow of the movies, and the javascript files connected to this.</li>
+            <li> <strong> Herman </strong> has been responsible for the "Om oss" page, as well as the javascript files connected to this.</li>
+            <li><strong> Celina </strong> has been responsible for the "Filmer" page, as well as the javascript files connected to this.</li>
+        </ul>
+
+        <h3> Who has been working on which files? </h3>
+
+        <ul>
+            <li> Christian </li>
+            <li> Vahideh</li>
+            <li> Celina </li>
+            <li> Herman </li>
+            <li> Henrik 
+                <ul>
+                    <li> booking.html </li>
+                    <li> html_generator.js </li>
+                    <li> booking.js </li>
+                    <li> styles.css </li>
+                </ul>
+            </li>
+
+        </ul>
+
     </section>
 
     <section>
 
         <h2> Modularity and implementation </h2>
+
+        <p> Most of the website is unique for each and every site, but there is also some things that are used for all sites, e.g. header and footer.
+            We therefore created a javascript called <strong> html_generator</strong> which basically just fetches the header and footer elements, and sets the innerHTML of those to the common HTML for the different pages when they're loaded.
+        </p>
+
+        <p>
+            Another example of modularity is the use of classes and elements in the <strong> CSS </strong>. This is only one document for the whole website, so everything written in the CSS that is reused because every HTML-file is affected of the styling in the CSS-file.
+        </p>
 
     </section>
 
