@@ -93,7 +93,7 @@
 
 /* For form nedenfor */
 
-input {
+.grid input, input {
     width: 100%;
     padding: 10px 5px;
     margin: 4px 0;
@@ -147,6 +147,12 @@ select {
     
 }
 
+#movie, #date {
+    width: 100%;
+}
+
+
+
 /* For form ovenfor */
 
 
@@ -186,6 +192,11 @@ select {
     .grid input {
         max-width: 100%;
         margin: 10px 0 10px 0;
+    }
+
+    #movie_booking_container {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
   
 }
@@ -278,11 +289,6 @@ body {
 }
 
 .modal {
-    /* Modal styles remain the same */
-}
-
-
-.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -316,3 +322,27 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
+#movie_booking_container > img {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+    
+
+}
+
+#movie_booking_container {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+
+.grid *, #date {
+    margin: auto;
+}
+
+
+

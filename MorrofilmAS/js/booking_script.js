@@ -105,3 +105,9 @@ function updateBooking(){
     
 }
 
+
+function changeMovie(){
+    const imgSrc = bookingForm["movie"].value;
+    document.getElementById("movie_booking_container").firstElementChild.src = "../Images/" + imgSrc + ".png";
+}
+
