@@ -15,10 +15,11 @@
     <div id="about_us"> 
         <h1> Om oss</h1> 
         
-        <section>
-            <img id="logo.png" src="../Images om oss/Logo.png" alt="Logo">
+
+        <section id = "intro">
+            <img id="logo.png" src="../img/about/Logo.png" alt="Logo">
             <p>
-                Velkommen til Morrofilm - der filmopplevelsen står i sentrum!
+                Velkommen til Morrofilm - et magisk filmunivers!
 
                 Siden vår oppstart har vi hatt et enkelt, men viktig mål: å levere den ultimate kinoopplevelsen for store og små. Vi forstår at et besøk til kinoen er mer enn bare en film – det er et avbrekk fra hverdagen, en sjanse til å drømme, og en mulighet til å samles med venner og familie i en felles opplevelse.
                 Vårt dedikerte team jobber utrettelig for å sørge for at hver visning er spesiell. Fra den nyeste teknologien innen bilde og lyd til komfortable seter og en stemningsfull atmosfære, streber vi etter å overgå dine forventninger hver gang du besøker oss.
@@ -27,55 +28,62 @@
         </section>
         <h1 id="team">Teamet bak</h1>
             <div id="members">
-                <section >
+                <section id="Christian" class ="personObject" onclick="selectPerson('Christian')">
                 <h2> Christian Stensøe - CEO</h2>
-                <img src="../Images om oss/Christian.png" alt="Christian Stensøe - CEO">
-                <p>
-                Christian går andreklasse på informatikkstudiet, kommer fra Ålesund og er vår CEO. Christian er glad i å reise, spise mat, henge med kjæresten sin og på 
-                fritiden trener han og er med i Start NTNU. Christian lever for å gjøre kundene sine fornøyde. 
-                </p>
+
+                <!-- <a href="about.html"><button>X</button></a> -->
+                <img src="../img/about/Christian.png" alt="Christian Stensøe - CEO" onclick="show_christian()">
+                <p id="Christian">
+                    Morrofilm AS' dynamiske CEO, Christian Stensøe, finner glede i kinokunst både i jobb og fritid, ofte tilbrakt i filmklubber eller fordypet i filmhistorie. Hans varme og kreativitet farger alt han gjør, enten han utforsker naturens ro eller binder sammen filmfrelste mennesker.
+                    Christian er lidenskapelig opptatt av medarbeiderne, og er en leder som er like engasjert i livets hverdagslige øyeblikk som i de store fortellingene på lerretet. - Generert av ChatGPT
+                  </p>
                 </section>
-                <section>
+              
+                <section id="Henrik" class ="personObject" onclick="selectPerson('Henrik')" >
                     <h2>Henrik Solheim - CTO</h2>
-                    <img src="../Images om oss/Henrik.png" alt="Henrik Solheim - CTO">
-                    <p>
-                        Henrik går andreklasse på PowerPoint-ingeniørstudiet, der han lærer seg hvordan økonomi tilsvarer tilbud = etterspørsel og hvordan lure pengene fra fattige mennesker. 
-                        Henrik kommer fra Førde, som er det minste stedet i landet en INDØKer har kommet fra noen gang. Lurer på hvordan mannen overlever med alle fra Bærum. Han har
-                        en forkjærlighet for Python og Javascript og lar ikke internsene i selskapet røre disse verktøyene, de må nøye seg med HTML og CSS. 
+                  
+                    <!-- <a href="about.html"><button>X</button></a> -->
+                    <img src="../img/about/Henrik.png" alt="Henrik Solheim - CTO" onclick="show_henrik()">
+                    <p id="Henrik">
+                        Henrik Solheim, vår CTO, er mannen bak kulissene som sørger for at hver filmvisning er teknisk feilfri. På fritiden finner du ham ofte med nesen begravd i de nyeste teknologibøkene eller i dyp konsentrasjon over et sjakkbrett, noe som vitner om hans strategiske og analytiske tankegang.
+                        Hans personlige jakt på balanse mellom teknologi og natur tar ham fra fjelltoppene til elektronikkens mikroverden, og denne dualiteten speiler seg i hans arbeid. Henrik er en CTO som ikke bare forstår kode, men også filmens evne til å berøre menneskesinnet! - Generert av ChatGPT
                     </p>
                 </section>
-                <section>
+                <section id = "Celina" class ="personObject" onclick="selectPerson('Celina')" >
                     <h2>Celina Ryholt - COO</h2>
-                    <img src="../Images om oss/Celina.png" alt="Celina Ryholt - COO">
+
+                    <!-- <a href="about.html"><button>X</button></a> -->
+                    <img src="../img/about/Celina.png" alt="Celina Ryholt - COO" onclick="show_celina()">
+
                     <p>
-                        Celina går i likhet med Henrik INDØK som fostrer frem fremtidens ledere. Ironisk nok, har ikke Celina lyst til å bli leder, men heller bli fortalt hva hun skal gjøre.
-                        Hun kommer fra Tønsberg (hyttekommunen) og trives best med å ligge litt etter i webtek og algdat. Hun er en svært viktig brikke i selskapet ved å kjefte på internsene 
-                        slik at de aldri har lyst til å jobbe der igjen.
+                        Celina Ryholt, vår COO, er drivkraften som sørger for at vår virksomhet fungerer som et velsmurt maskineri. Med en bemerkelsesverdig evne til å holde mange baller i luften samtidig, sjonglerer hun jobb, skole og mammarollen som en lek. Utenfor kontoret finner du henne ofte på en joggetur i parken eller i dyp konsentrasjon over et krevende puslespill, noe som gjenspeiler hennes fokuserte og metodiske natur.
+                        Celinas blanding av ro, organisasjonstalent og en urokkelig forpliktelse til teamets velvære, gjør henne til en uvurderlig leder hos Morrofilm. Enten det er i arbeidslivet eller personlig, er Celina hjertet som holder timeplanen, strategien og folkene våre i harmoni. - Generert av ChatGPT
                     </p>
                 </section>
-                <section>
+                <section id="Vahideh" class ="personObject" onclick="selectPerson('Vahideh')" ondblclick="getOut('Vahideh')">
                     <h2>Vahideh Rezaei - CFO</h2>
-                    <img src="../Images om oss/Vahideh.png" alt="Vahideh Rezaei - CFO">
-                    <p>Vahideh er vår CFO og har full kontroll på alle inn- og utbetalinger. Denne tilliten nøt hun godt da hun bestilte VIP bord på String showbar i Oslo, under forrige firmatur. 
-                        I tillegg mangler det 40 millioner kroner fra firmaet, som mistenkes holdes skjult i skatteparadiser. Hun gjør en fantastisk jobb ved å kombinere programmering og regnskapsføring!
+
+                    <a href="about.html"><button>X</button></a>
+                    <img src="../img/about/Vahideh.png" alt="Vahideh Rezaei - CFO" onclick="show_vahideh()">
+                    <p>
+                        Vahideh Rezaei, vår CFO, står ved roret av den finansielle navigeringeren i Morrofilm med et skarpt øye for detaljer og en strategisk forståelse av bærekraftig vekst. Når arbeidsdagen avsluttes, engasjerer hun seg i verdensøkonomiske debatter eller fordypes i klassisk litteratur, noe som speiler hennes analytiske tenkning og dypere forståelse for kulturelle nyanser. 
+                        Vahideh balanserer finesse i finansiell forvaltning med en dyp kulturell innsikt, noe som gjør henne til en uvurderlig skatt for Morrofilm. Hennes evne til å veve sammen tall med visjon gjør Vahideh til mer enn en CFO – hun er en forteller av vår økonomiske historie. - Generert av ChatGPT
                     </p>
                 </section>
-                <section>
+              
+                <section id="Herman" class ="personObject" onclick="selectPerson('Herman')" ondblclick="getOut('Herman')">
                     <h2>Herman Lous - Summer Intern</h2>
-                    <img src="../Images om oss/Herman.png" alt="Herman Lous - Summer Intern" onclick="showHerman()">
-                    <p>
-                        Herman er den viktigste brikken i firmaet. Han gjør alt arbeidet på front-end og er absolutt ikke ansvarlig for "om oss"-siden på nettsiden. På fritiden elsker han å løpe, henge med 
-                        venner og gjøre skole. Han brenner ekstra for Start NTNU og alle timene som legges ned i det frivillige vervet gjenspeiler dette. Takk for den fantastiske jobben du har gjort denne 
-                        sommeren Herman, vi kommer til å savne deg
+
+                    <!-- <a href="about.html"><button>X</button></a> -->
+                    <img src="../img/about/Herman.png" alt="Herman Lous - Summer Intern" onclick="show_herman()" >
+                    <p>      
+                        Herman Lous, vår summer intern, bringer en frisk bølge av entusiasme og nysgjerrighet til teamet. Mellom arbeidsoppgaver, finner du ham ivrig utforskende i de nyeste filmteknologitrendene eller deltakende i lokale filmfestivaler, noe som bekrefter hans brennende lidenskap for filmindustrien.
+                        Selv i de små oppgavene viser Herman en imponerende dedikasjon og en læringsiver som smitter over på hele kontoret. Som en spirrende talent innen bransjen, er Herman allerede i ferd med å sette sitt preg på Morrofilm med sin kreative energi og forfriskende perspektiver. - Generert av ChatGPT
+
                     </p>
+
                 </section>
             </div>
-        <div>
-            <p id="about_paragraph">
-                
-            </p>
-    </div>
-    
     <footer id="footer"></footer>
     
     <script src="../js/about.js"></script>
