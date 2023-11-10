@@ -198,6 +198,8 @@ select {
     #movie_booking_container {
         margin-top: 30px;
         margin-bottom: 30px;
+    
+    }
 
    #about_us h1{
     margin:20px;
@@ -446,6 +448,3 @@ body {
 .grid *, #date {
     margin: auto;
 }
-
-
-
