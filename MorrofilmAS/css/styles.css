@@ -448,3 +448,13 @@ body {
 .grid *, #date {
     margin: auto;
 }
+
+#booking_button *{
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: 140%;
+    background-color: rgb(21, 194, 87);
+    border-radius: 10px;
+    border-width: 1px;
+}

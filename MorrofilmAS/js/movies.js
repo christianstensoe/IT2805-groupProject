@@ -16,3 +16,11 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 };
+
+/* Funksjon som sender deg til booking-siden */
+const button = document.getElementById("booking_button")
+button.addEventListener("click", goToBooking )
+
+function goToBooking(event){
+    location.href = "../pages/booking.html";
+}
