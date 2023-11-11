@@ -463,3 +463,42 @@ select {
     border-radius: 10px;
     border-width: 1px;
 }
+
+
+
+
+/* slideshow for fremsided */
+
+#slideshow{
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 500px;
+    width: 70%;
+}
+
+#slideshow img{
+    position: absolute;
+    width: 100%;
+    transition: opacity 1s ease;
+    border: solid 10px;
+    
+}
+
+
+#slidesHeader {
+    position: relative;
+    padding-top: 50px;
+    border: 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
