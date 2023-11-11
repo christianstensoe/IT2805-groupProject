@@ -3,6 +3,11 @@
     font-weight: 100;
 }
 
+body {
+    min-height: calc(100vh - 100px);
+    position: relative;
+}
+
 
 
 .topbox {
@@ -13,9 +18,11 @@
     font-size: 200%;
 
     position: fixed;
-    top: 10px;
+    top: 0;
     left: 0;
     right: 0;
+
+    background-color: white;
 }
 
 .topbox > div {
@@ -42,16 +49,17 @@
     background-color: red;
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
-    height: 50px;
+    width: calc(100% + 16px);
+    margin-left: -8px;
+    height: 67px;
     color: white;
     text-align: center;
     font-size: 120%;
 
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: absolute;
+    bottom: -8px;
+
+    
 }
 
 .bottom > div {
@@ -80,7 +88,8 @@
 }
 
 .under_header {
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 120px;
 }
 
 #booking_header {
@@ -174,7 +183,7 @@ select {
     }
 
     .under_header {
-        margin-top: 200px;
+        padding-top: 200px;
     }
     
     #bookingDiv {
@@ -212,22 +221,24 @@ select {
         margin-top: 20px;
 
     }
-  
-}
-  
 
-.under_header{
-    margin-top: 100px;
+    body {
+        min-height: 100vh;
+    }
+  
 }
+  
 #about_us {
     display:block;
     margin: auto;
     text-align: center;
 }
+
 #about_us h1{
     text-align: center;
     font-size: 60px;
 }
+
 #team{
     text-align: center;
     font-size: 60px;
@@ -238,25 +249,22 @@ select {
     text-align: center;
     font-size: 120%;
 }
+
 #about_us{
     text-align: center;
-    margin-top:100px;
 }
+
 #logo.png{
     margin-top: 0px;
 }
-/* #about_us p{
-    text-align: center;
-    margin: 70px;
-    font-size: 20px; */
-    
-/* } */
+
 #members {
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .personObject p{
     display:flex;
     flex-wrap: wrap;
@@ -281,6 +289,7 @@ select {
 #members h2{
     font-style: bold;
 }
+
 #intro p{
     display: flex;
     max-width: 978px;
@@ -335,10 +344,6 @@ select {
 }
 
 /* kode spesielt til movies og popup-boks */
-
-body {
-    font-family: Arial, sans-serif;
-}
 
 .container {
     display: flex;
