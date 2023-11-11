@@ -7,37 +7,13 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="../css/booking.css">
-    <script src="../js/booking.js" defer></script>
 
 </head>
 <body>
     
-    <header id="header"></header>
-
-    <!-- ... Your existing content ... -->
-
-
-<!-- Movie Box -->
-<main>
-    <div class="movie-box" id="movieBox">
-        <img src="path_to_movie_image.jpg" alt="Inception Movie Poster" class="movie-image">
-        <h2>Inception</h2>
-        <p>A short description...</p>
-    </div>
-    
-    <!-- Popup Modal -->
-    <div class="modal" id="movieModal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeModal">&times;</span>
-            <img src="path_to_movie_image.jpg" alt="Inception Movie Poster" class="movie-image-modal">
-            <h2>Movie Title</h2>
-            <p>Detailed description about the movie...</p>
-        </div>
-    </div>
-</main>
-
-<!-- ... Your existing content ... -->
-
+    <header id="header">
+        
+    </header>
 
     <section class="under_header center">
 
@@ -67,24 +43,39 @@
 
                 <p> Billetter må bestilles senest en time før filmen starter </p>
                 
+                <div class="grid">
+                    <label for="movie"> Film: </label>
 
-                <label for="movie"> Film: </label>
-                <input type="text" name="movie" id="movie"  required> <br>
-    
-                <br>
-    
-                <label for="date"> Dato: </label>
-                <input type="date" name="date" id="date" required> <br>
-    
-                <br>
-    
-                <label for="time"> Tidspunkt: </label> <br> <br>
+                    <select name="movie" id="movie" onchange="changeMovie()">
+                        <option value="AW"> After Work </option>
+                        <option value="DM"> Dumb Money </option>
+                        <option value="LEL"> Lars Er LOL </option>
+                        <option value="PP"> Paw Patrol </option>
+                        <option value="FNAF"> Five Nights At Freddys </option>
+                        <option value="KOFM"> Killers Of The Flower Moon </option>
+                        <option value="Exorcist"> Exorcist </option>
+                        <option value="Sulis_1907"> Sulis 1907 </option>
+                    </select>
                 
-                <select name="time" id="time">
-                    <option value="17:00"> 17:00 </option>
-                    <option value="19:00"> 19:00 </option>
-                    <option value="21:00"> 21:00 </option>
-                </select><br>
+                    
+                
+                    <label for="date"> Dato: </label>
+                    <input type="date" name="date" id="date" required> 
+
+                    <label for="time"> Tidspunkt: </label> 
+
+                    <select name="time" id="time">
+                        <option value="17:00"> 17:00 </option>
+                        <option value="19:00"> 19:00 </option>
+                        <option value="21:00"> 21:00 </option>
+                    </select>
+
+                    <div id="movie_booking_container">
+                        <img src="../img/movies/AW.png" alt="AW-img">
+                    </div>
+
+                </div>
+                
     
                 <h3> Billettyper </h3>
 

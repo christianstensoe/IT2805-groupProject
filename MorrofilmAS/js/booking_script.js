@@ -26,18 +26,6 @@ function ticketValid(){
         return false;
     }
 
-
-    /* Nedenfor må det legges inn eller hentes en liste med filmer som vi tilbyr */
-
-            const movieList = ["Default"]
-            const ticketMovie = bookingForm["movie"].value;
-
-            if(!(movieList.includes(ticketMovie))){
-                alert("Vi tilbyr ikke visning av denne filmen")
-                return false;
-            }
-
-
     /* Legges inn sjekk for e-postadresse? */
 
 
@@ -105,3 +93,8 @@ function updateBooking(){
     
 }
 
+
+function changeMovie(){
+    const imgSrc = bookingForm["movie"].value;
+    document.getElementById("movie_booking_container").firstElementChild.src = "../img/movies/" + imgSrc + ".png";
+}
