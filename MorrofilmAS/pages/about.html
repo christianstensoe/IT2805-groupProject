@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
-<body>
+<body class="background">
 
              
     <header id="header"></header>
   
-    <div id="about_us" class="under_header"> 
+    <div id="about_us"> 
         <h1> Om oss</h1> 
         
 
@@ -31,8 +31,8 @@
                 <section id="Christian" class ="personObject" onclick="selectPerson('Christian')">
                 <h2> Christian Stensøe - CEO</h2>
 
-                <!-- <a href="about.html"><button>X</button></a> -->
-                <img src="../img/about/Christian.png" alt="Christian Stensøe - CEO" onclick="show_christian()">
+                <button id="buttonChristian" onclick="getOut('buttonChristian')">X</button>
+                <img src="../img/about/Christian.png" alt="Christian Stensøe - CEO">
                 <p id="Christian">
                     Morrofilm AS' dynamiske CEO, Christian Stensøe, finner glede i kinokunst både i jobb og fritid, ofte tilbrakt i filmklubber eller fordypet i filmhistorie. Hans varme og kreativitet farger alt han gjør, enten han utforsker naturens ro eller binder sammen filmfrelste mennesker.
                     Christian er lidenskapelig opptatt av medarbeiderne, og er en leder som er like engasjert i livets hverdagslige øyeblikk som i de store fortellingene på lerretet. - Generert av ChatGPT
@@ -42,9 +42,9 @@
                 <section id="Henrik" class ="personObject" onclick="selectPerson('Henrik')" >
                     <h2>Henrik Solheim - CTO</h2>
                   
-                    <!-- <a href="about.html"><button>X</button></a> -->
-                    <img src="../img/about/Henrik.png" alt="Henrik Solheim - CTO" onclick="show_henrik()">
-                    <p id="Henrik">
+                   <button id="buttonHenrik" onclick="getOut('buttonHenrik')">X</button>
+                    <img src="../img/about/Henrik.png" alt="Henrik Solheim - CTO" >
+                    <p id="Henrik" >
                         Henrik Solheim, vår CTO, er mannen bak kulissene som sørger for at hver filmvisning er teknisk feilfri. På fritiden finner du ham ofte med nesen begravd i de nyeste teknologibøkene eller i dyp konsentrasjon over et sjakkbrett, noe som vitner om hans strategiske og analytiske tankegang.
                         Hans personlige jakt på balanse mellom teknologi og natur tar ham fra fjelltoppene til elektronikkens mikroverden, og denne dualiteten speiler seg i hans arbeid. Henrik er en CTO som ikke bare forstår kode, men også filmens evne til å berøre menneskesinnet! - Generert av ChatGPT
                     </p>
@@ -52,30 +52,30 @@
                 <section id = "Celina" class ="personObject" onclick="selectPerson('Celina')" >
                     <h2>Celina Ryholt - COO</h2>
 
-                    <!-- <a href="about.html"><button>X</button></a> -->
-                    <img src="../img/about/Celina.png" alt="Celina Ryholt - COO" onclick="show_celina()">
+                    <button id="buttonCelina" onclick="getOut('buttonCelina')">X</button>
+                    <img src="../img/about/Celina.png" alt="Celina Ryholt - COO">
 
                     <p>
                         Celina Ryholt, vår COO, er drivkraften som sørger for at vår virksomhet fungerer som et velsmurt maskineri. Med en bemerkelsesverdig evne til å holde mange baller i luften samtidig, sjonglerer hun jobb, skole og mammarollen som en lek. Utenfor kontoret finner du henne ofte på en joggetur i parken eller i dyp konsentrasjon over et krevende puslespill, noe som gjenspeiler hennes fokuserte og metodiske natur.
                         Celinas blanding av ro, organisasjonstalent og en urokkelig forpliktelse til teamets velvære, gjør henne til en uvurderlig leder hos Morrofilm. Enten det er i arbeidslivet eller personlig, er Celina hjertet som holder timeplanen, strategien og folkene våre i harmoni. - Generert av ChatGPT
                     </p>
                 </section>
-                <section id="Vahideh" class ="personObject" onclick="selectPerson('Vahideh')" ondblclick="getOut('Vahideh')">
+                <section id="Vahideh" class ="personObject" onclick="selectPerson('Vahideh')" >
                     <h2>Vahideh Rezaei - CFO</h2>
 
-                    <a href="about.html"><button>X</button></a>
-                    <img src="../img/about/Vahideh.png" alt="Vahideh Rezaei - CFO" onclick="show_vahideh()">
+                    <button id="buttonVahideh" onclick="getOut('buttonVahideh')">X</button>
+                    <img src="../img/about/Vahideh.png" alt="Vahideh Rezaei - CFO">
                     <p>
                         Vahideh Rezaei, vår CFO, står ved roret av den finansielle navigeringeren i Morrofilm med et skarpt øye for detaljer og en strategisk forståelse av bærekraftig vekst. Når arbeidsdagen avsluttes, engasjerer hun seg i verdensøkonomiske debatter eller fordypes i klassisk litteratur, noe som speiler hennes analytiske tenkning og dypere forståelse for kulturelle nyanser. 
                         Vahideh balanserer finesse i finansiell forvaltning med en dyp kulturell innsikt, noe som gjør henne til en uvurderlig skatt for Morrofilm. Hennes evne til å veve sammen tall med visjon gjør Vahideh til mer enn en CFO – hun er en forteller av vår økonomiske historie. - Generert av ChatGPT
                     </p>
                 </section>
               
-                <section id="Herman" class ="personObject" onclick="selectPerson('Herman')" ondblclick="getOut('Herman')">
+                <section id="Herman" class ="personObject" onclick="selectPerson('Herman')" >
                     <h2>Herman Lous - Summer Intern</h2>
 
-                    <!-- <a href="about.html"><button>X</button></a> -->
-                    <img src="../img/about/Herman.png" alt="Herman Lous - Summer Intern" onclick="show_herman()" >
+                   <button id="buttonHerman" onclick="getOut('Herman')">X</button>
+                    <img src="../img/about/Herman.png" alt="Herman Lous - Summer Intern" >
                     <p>      
                         Herman Lous, vår summer intern, bringer en frisk bølge av entusiasme og nysgjerrighet til teamet. Mellom arbeidsoppgaver, finner du ham ivrig utforskende i de nyeste filmteknologitrendene eller deltakende i lokale filmfestivaler, noe som bekrefter hans brennende lidenskap for filmindustrien.
                         Selv i de små oppgavene viser Herman en imponerende dedikasjon og en læringsiver som smitter over på hele kontoret. Som en spirrende talent innen bransjen, er Herman allerede i ferd med å sette sitt preg på Morrofilm med sin kreative energi og forfriskende perspektiver. - Generert av ChatGPT
