@@ -1,11 +1,7 @@
+
 *{
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
-}
-
-body {
-    min-height: 100vh;
-    position: relative;
 }
 
 
@@ -18,16 +14,15 @@ body {
     font-size: 200%;
 
     position: fixed;
-    top: 0;
+    top: 10px;
     left: 0;
     right: 0;
-
-    background-color: white;
 }
+
 
 .topbox > div {
     width: 25%;
-    background-color: red;
+    background-color: #ff0000;
     margin: 2px;
 }
 
@@ -49,17 +44,16 @@ body {
     background-color: red;
     display: flex;
     flex-wrap: nowrap;
-    width: calc(100% + 16px);
-    margin-left: -8px;
-    height: 67px;
+    width: 100%;
+    height: 50px;
     color: white;
     text-align: center;
     font-size: 120%;
 
-    position: absolute;
-    bottom: -8px;
-
-    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .bottom > div {
@@ -88,8 +82,7 @@ body {
 }
 
 .under_header {
-    padding-top: 100px;
-    padding-bottom: 120px;
+    margin-top: 100px;
 }
 
 #booking_header {
@@ -102,7 +95,7 @@ body {
 
 /* For form nedenfor */
 
-.grid input, input {
+input {
     width: 100%;
     padding: 10px 5px;
     margin: 4px 0;
@@ -156,12 +149,6 @@ select {
     
 }
 
-#movie, #date {
-    width: 100%;
-}
-
-
-
 /* For form ovenfor */
 
 
@@ -183,7 +170,7 @@ select {
     }
 
     .under_header {
-        padding-top: 200px;
+        margin-top: 200px;
     }
     
     #bookingDiv {
@@ -202,16 +189,9 @@ select {
         max-width: 100%;
         margin: 10px 0 10px 0;
     }
-
-
-    #movie_booking_container {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    
-    }
-
-   #about_us h1{
-    margin:20px;
+    #about_us h1{
+    display: block;
+    margin-top:200px;
    }
     #intro{
         margin-top: 20px;
@@ -219,26 +199,44 @@ select {
     #intro p{
         font-size: 14px;
         margin-top: 20px;
+        border: 2px solid;
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
 
     }
-
-    body {
-        min-height: 100vh;
+    .active p {
+        display: flex; 
+        max-width: 480px;
+        border: 2px solid;
+        font-size: 20px;
+        margin-right: 20px; 
     }
+    .active button{
+        position: relative !important;
+        left:30% !important;
+        top:2% !important;
+        display: block !important;
+    }
+    
   
 }
   
+
+.under_header{
+    margin-top: 100px;
+}
 #about_us {
     display:block;
     margin: auto;
     text-align: center;
 }
-
 #about_us h1{
     text-align: center;
     font-size: 60px;
 }
-
 #team{
     text-align: center;
     font-size: 60px;
@@ -246,14 +244,21 @@ select {
 }
 
 #about_us h2 {
+    color: white;
     text-align: center;
     font-size: 120%;
+    border: 2px solid;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: red;
+    box-shadow: 5px 5px 5px 5px #141414;
+    margin:20px;
 }
-
 #about_us{
     text-align: center;
+    margin-top:100px;
 }
-
 #logo.png{
     margin-top: 0px;
 }
@@ -264,7 +269,6 @@ select {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .personObject p{
     display:flex;
     flex-wrap: wrap;
@@ -281,13 +285,15 @@ select {
 #members img{
     max-width: 250px;
     max-height: 370px;
-    padding:20px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-left:20px;
+    margin-right:20px;
+    border:2px solid;
+    border-radius: 25px;
+    background-color:red ;
+    box-shadow: #141414 2px 2px 2px 2px;
     
-}
-
-#members h2{
-    font-style: bold;
 }
 
 #intro p{
@@ -296,6 +302,13 @@ select {
     margin-left: 20%;
     margin-right: 20%;
     line-height: 25px;
+    border:2px solid;
+    border-radius: 25px;
+    padding:5px;
+}
+
+.memberRole{
+    font-weight:900;
 }
 
 .active {
@@ -309,9 +322,15 @@ select {
     display: block; 
     max-width: 480px;
     border: 2px solid;
+    padding: 10px;
+    color: white;
     margin-bottom: 50px;
     font-size: 20px;
     margin-right: 20px; 
+    border-radius: 25px;
+    background-color: #a71515;
+    box-shadow: 5px 5px 5px 5px #141414;
+
 }
 
 .active h2{
@@ -321,22 +340,30 @@ select {
 .active img {
     max-width: 250px;
     max-height: 370px;
-    
+    border-radius: 50px;
+    padding:20px;
+    border:2px solid;
+    border-radius: 25px;
+    margin-right:20px;
+    margin-left:10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: #9197AE;
+    box-shadow: 5px 5px 5px 5px #141414;  
+
 }
 
 .active button{
     position:relative;
-    right: -450px;
-    top:    20px;
+    align-items: center;
+    right:-100%;
+    top: -45%;
     display: block;
     text-decoration: none;
 }
-
-
 .hidden{
     display: none;
 }
-
 
 .under-header {
     padding-top: 50px;
@@ -344,6 +371,10 @@ select {
 }
 
 /* kode spesielt til movies og popup-boks */
+
+body {
+    font-family: Arial, sans-serif;
+}
 
 .container {
     display: flex;
@@ -367,6 +398,7 @@ select {
     width: 150px;
     height: 200px;
 }
+
 
 .modal {
     display: none;

@@ -1,4 +1,3 @@
-
 function selectPerson(ID){
     console.log(ID)
     let go = document.querySelectorAll(".personObject")
@@ -11,7 +10,17 @@ function selectPerson(ID){
         }
     }
 }
-function getOut(){
 
+function getOut(ID) {
+    event.stopImmediatePropagation()
+    let out = ID.replace('button', '');
+    let allElements = document.querySelectorAll('.personObject');
+
+    allElements.forEach(function(element) {
+        if (element.id == out) {
+            element.classList.remove('active');
+        } else {
+            element.classList.remove('hidden');
+        }
+    });
 }
-
