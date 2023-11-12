@@ -1,12 +1,12 @@
 let moviesArray = [
-    '../slidesIMG/AfterWork.webp', 
-    '../slidesIMG/DumbMoney.jpeg', 
-    '../slidesIMG/Exorsist.jpeg', 
-    '../slidesIMG/FiveNightsAtFreddys.jpeg', 
-    '../slidesIMG/KillerOfTheFlowerMoon.jpg', 
-    '../slidesIMG/LarsErLol.jpeg', 
-    '../slidesIMG/PawPatrol.jpeg', 
-    '../slidesIMG/Sulis1907.jpeg'];
+    '../img/slides/AfterWork.webp', 
+    '../img/slides/DumbMoney.jpeg', 
+    '../img/slides/Exorsist.jpeg', 
+    '../img/slides/FiveNightsAtFreddys.jpeg', 
+    '../img/slides/KillerOfTheFlowerMoon.jpg', 
+    '../img/slides/LarsErLol.jpeg', 
+    '../img/slides/PawPatrol.jpeg', 
+    '../img/slides/Sulis1907.jpeg'];
 
 const slideshowDiv = document.getElementById('slideshow');
 slideshowDiv.classList.add('mouseOverSlides')
@@ -40,12 +40,10 @@ changeSlide = () => {
 let autoSlide = setInterval(() => changeSlide(), 3000)
 
 document.querySelector('.mouseOverSlides').addEventListener('mouseover', () => {
-    console.log('innn')
     clearInterval(autoSlide)
 })
 
 document.querySelector('.mouseOverSlides').addEventListener('mouseout', () => {
-    console.log('uuuttt');
     autoSlide = setInterval(() => changeSlide(), 3000);
 })
 
