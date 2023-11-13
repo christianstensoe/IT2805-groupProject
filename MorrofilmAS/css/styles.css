@@ -24,6 +24,7 @@ body {
     right: 0;
 
     background-color: white;
+    z-index: 30;
 }
 
 
@@ -125,6 +126,7 @@ body {
 
 input[type="submit"] {
     background-color: rgb(27, 180, 78);
+    cursor: pointer;
 }
 
 input[type="submit"]:hover {
@@ -283,6 +285,11 @@ select {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+#members h2{
+    cursor: pointer;
+}
+
 .personObject p{
     display:flex;
     flex-wrap: wrap;
@@ -296,6 +303,7 @@ select {
 }
 
 
+
 #members img{
     max-width: 250px;
     max-height: 370px;
@@ -307,6 +315,7 @@ select {
     border-radius: 25px;
     background-color:red ;
     box-shadow: #141414 2px 2px 2px 2px;
+    cursor: pointer;
     
 }
 
@@ -472,10 +481,6 @@ body {
     margin-bottom: 20px;
 }
 
-#booking_button {
-    margin: auto;
-}
-
 #movie_booking_container > img {
     display: block;
     margin: auto;
@@ -505,6 +510,7 @@ body {
     background-color: rgb(21, 194, 87);
     border-radius: 10px;
     border-width: 1px;
+    cursor: pointer;
 }
 
 
@@ -526,7 +532,7 @@ body {
 
 #slideshow img{
     position: absolute;
-    width: 100%;
+    width: 80%;
     transition: opacity 1s ease;
     border: solid 10px;
     
@@ -542,6 +548,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 
