@@ -208,7 +208,7 @@ select {
     }
 
     #intro{
-        margin-top: 20px;
+        margin-top: 200px;
     }
 
     #intro p{
@@ -241,6 +241,10 @@ select {
     #movie_booking_container{
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    #slideshow img {
+        max-width: 100%;
     }
     
 }
@@ -548,5 +552,3 @@ body {
     align-items: center;
     z-index: 10;
 }
-
-
