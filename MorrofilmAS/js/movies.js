@@ -1,3 +1,4 @@
+//funksjon som bare viser filmene på siden
 function showMovieInfo(title, description, image) {
     document.getElementById("modalTitle").textContent = title;
     document.getElementById("modalDescription").textContent = description;
@@ -6,10 +7,12 @@ function showMovieInfo(title, description, image) {
 
 }
 
+//funksjon som lukker modalboksen når du krysser den ut
 function hideMovieInfo() {
     document.getElementById("movieModal").style.display = "none";
 }
 
+//funksjon som får modalboksen til å dukke opp når du trykker på en film
 window.onclick = function(event) {
     var modal = document.getElementById("movieModal");
     if (event.target == modal) {
