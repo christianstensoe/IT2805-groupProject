@@ -533,7 +533,7 @@ body {
 
 #slideshow img{
     position: absolute;
-    width: 80%;
+    width: 700px;
     transition: opacity 1s ease;
     border: solid 10px;
     
