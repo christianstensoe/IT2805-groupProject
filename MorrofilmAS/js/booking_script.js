@@ -26,7 +26,7 @@ function ticketValid(){
         return false;
     }
 
-    /* Legges inn sjekk for e-postadresse? */
+    /* Med litt mer tid kunne vi har ha lagt inn sjekk for e-postadresse også... */
 
 
     /* Sjekker billettyper */
@@ -93,7 +93,7 @@ function updateBooking(){
     
 }
 
-
+/* Funksjon som endrer hvilket bilde som vises, og som endrer seg når man endrer film. */
 function changeMovie(){
     const imgSrc = bookingForm["movie"].value;
     document.getElementById("movie_booking_container").firstElementChild.src = "../img/movies/" + imgSrc + ".png";
