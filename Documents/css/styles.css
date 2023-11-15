@@ -108,6 +108,10 @@ figure {
     text-align: center;
 }
 
+figure > img{
+    max-width: 69%;
+}
+
 strong, a {
     margin-left: 0;
     margin-right: 0;
