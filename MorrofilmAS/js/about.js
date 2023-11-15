@@ -1,5 +1,5 @@
 function selectPerson(ID){ //definerer funksjonen selectPerson som tar inn argumentet ID
-    console.log(ID) 
+    console.log(ID) //printer ID-en til elementet som er klikket 
     let go = document.querySelectorAll(".personObject") //deklarerer en variabel som er alle elementene i classen personObject
     for (let i = 0; i < go.length; i++){ //så lenge i er mindre enn lengden av go (altså lavere verdi enn antall elementer i classen) øker i med 1
         console.log(go[i]) //printer her ut alle elementene i personObject
