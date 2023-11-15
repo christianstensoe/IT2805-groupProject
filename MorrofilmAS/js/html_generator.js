@@ -24,6 +24,7 @@ document.getElementById("header").innerHTML = '\
         </div> \
     </div> ';
 
+/* Koden nedenfor legger til denne klassen til denne classen slik at den får en annen farge i CSS */
 
 const current_page = location.href.split("/").slice(-1)[0].split(".")[0];
 
