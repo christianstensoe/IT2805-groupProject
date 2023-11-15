@@ -13,6 +13,8 @@
 
     <section class="under_header"> 
 
+        <!-- Container med filmene som vises -->
+        
         <div class="container">
             <div class="movie" onclick="showMovieInfo('After Work', 'After Work er en tankevekkende film om fenomenet arbeid i det 21. århundre, filmet med skarp linse og en mild dose sarkasme. Regissør Erik Gandini er kjent for sine satiriske filmer som Videocracy og Swedish Theory of Love. Denne gangen tar han for seg vårt forhold til jobben. For hvem er vi egentlig, når jobben slutter å eksistere?', '../img/movies/AW.png')">
                 <img src="../img/movies/AW.png" alt="Movie 1 Cover">
@@ -46,9 +48,11 @@
                 <img src="../img/movies/Sulis 1907.png" alt="Movie 8 Cover">
                 <h2>Sulis 1907</h2>
             </div>
-            <!-- Add more movie entries as needed -->
+            <!-- Det kan legges til flere filmer her hvis dere vil -->
         </div>
 
+
+        <!-- Modalboksen som dukker opp når du trykker på en film -->
         <div id="movieModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="hideMovieInfo()">&times;</span>
