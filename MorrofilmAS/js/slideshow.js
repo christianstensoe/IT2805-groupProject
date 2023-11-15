@@ -1,3 +1,7 @@
+// JS Kode for slideshow av de nyeste filemen på nettsiden
+
+
+
 let moviesArray = [
     '../img/slides/AfterWork.webp', 
     '../img/slides/DumbMoney.jpeg', 
@@ -12,6 +16,8 @@ const slideshowDiv = document.getElementById('slideshow');
 slideshowDiv.classList.add('mouseOverSlides')
 let index = 0;
 
+// Lager et img element for hvert bilde og setter img-source lik pathen til bildet. 
+// Appender hvert img-elemnt(child) til slideShowDiv-elementet(parent)
 moviesArray.forEach((source, index) => {
 
     let img = document.createElement('img');
