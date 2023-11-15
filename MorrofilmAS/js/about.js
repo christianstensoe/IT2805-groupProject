@@ -1,18 +1,18 @@
-function selectPerson(ID){
-    console.log(ID)
-    let go = document.querySelectorAll(".personObject")
-    for (let i = 0; i < go.length; i++){
-        console.log(go[i])
-        if (go[i].id != ID){
+function selectPerson(ID){ //definerer funksjonen selectPerson som tar inn argumentet ID
+    console.log(ID) 
+    let go = document.querySelectorAll(".personObject") //deklarerer en variabel som er alle elementene i classen personObject
+    for (let i = 0; i < go.length; i++){ //så lenge i er mindre enn lengden av go (altså lavere verdi enn antall elementer i classen) øker i med 1
+        console.log(go[i]) //printer her ut alle elementene i personObject
+        if (go[i].id != ID){ //dersom elementets ID er ulik fra IDen som ble trykket på får de classen hidden, som skjuler elementet
             go[i].classList.add("hidden")
-        } else{
+        } else{                         //ellers får de classen active som viser elementet og beskrivelsen
             go[i].classList.add("active")
         }
     }
 }
 
-document.querySelectorAll('button').forEach(function(button){
-    button.addEventListener('click', function(event){
+document.querySelectorAll('button').forEach(function(button){ //henter her ut alle buttons og for hver enkelt button skal den høre etter 'click'. 
+    button.addEventListener('click', function(event){ //Når 'click' er hørt kjører funksjonen getOut()
         getOut(button.id,event);
     })
 })
